@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        input[type="textbox"]:focus{
+            border: 2px solid #FFEA00; 
+        }
+        input[type="number"]:focus{
+            border: 2px solid #FFEA00; 
+        }
+        select:focus{
+            border: 2px solid #FFEA00;
+        }
          .border{
             background-color:#7B1FA2;
             border:2px solid #FFEA00 ;
@@ -18,10 +27,7 @@
              font-variant:small-caps;
              font-size: 20px;
          }
-         .input{ 
-           
-         }
-         .box{
+        .box{
              background-color:#FAFAFA ;
              outline: 0;
              border: 0;
@@ -62,17 +68,18 @@
         }
         .menu1{
             font-variant:small-caps;
+            font-size: 17px;
         }
          </style>
 </head>
 <body style="background-color:#C51162">
-        <div class="border" style="color:#FFFF00;margin :20px auto;width:50%;">
+    <div class="border" style="color:#FFFF00;margin :20px auto;width:50%;">
                 <img src="cover.jpeg" alt="cover pic" width="100%" height="25%">
                 <img class="dp"src="dp.jpeg" alt="profile pic" >
-                <h2 class="dp1">M.Anantha krishnan</h2>
-                <h4 class="dp1">Student,</h4>
-                <h4 class="dp1">kce,</h4>
-                <h4 class="dp1">Coimbatore.</h4>
+                <h1 class="dp1">Anantha Krishnan.M</h1>
+                <h3 class="dp1">Student,</h3>
+                <h3 class="dp1">kce,</h3>
+                <h3 class="dp1">Coimbatore.</h3>
                 <div class="menu">
                         <img  src="home.png" alt="home"><br>
                         <b class="menu1">Home</b>
@@ -96,21 +103,21 @@
             <legend style="font-variant:small-caps; font-weight:bold ;font-size:30px;">Profile</legend>
            <div>
             <label class="text" for="Username">Username</label><br>
-           <input class="input box" type="textbox" name="Username" id="Username" placeholder="For Example:abi"><br></div>
+           <input class=" box" type="textbox" name="Username" id="Username" placeholder="For Example:abi"><br></div>
            <div><label class="text" for="Name">Name</label><br>
-           <input class="input box" type="textbox" name="Name" id="Name" placeholder="For example:Anantha">
+           <input class=" box" type="textbox" name="Name" id="Name" placeholder="For example:Anantha">
            <input class="box" type="textbox" name="Name" id="LastName" placeholder="For example:krishnan"><br></div>
            <div><label class="text" for="email">email</label><br>
-           <input class="input box" type="textbox" name="email" id="email" placeholder="For Example:abi">@
+           <input class=" box" type="textbox" name="email" id="email" placeholder="For Example:abi">@
            <select class="box">
                <option value="gmail.com">gmail.com</option>
                <option value="hotmail.com">hotmail.com</option>
                <option value="yahoomail.com">yahoomail.com</option>
                <option value="outlook.com">outlook.com</option>
            </select><br></div>
-           <div><label class="text" for="Phone number">Phone number Gender</label>
-           <label for="Gender"></label><br>
-           <input class="input box" type="number" name="Phone number" id="Phone number" placeholder="For Example:9999999999">
+           <div ><label style="display:inline-block;" class="text" for="Phone number">Phone number</label><br>
+           <input class="box" type="number" name="Phone number" id="Phone number" placeholder="For Example:9999999999"></div>
+           <div style="display:inline-block;"><label class="text" for="Gender">Gender</label><br>
            <input type="radio" name="Gender" id="Male" >Male
            <input type="radio" name="Gender" id="Female" >Female<br></div>
            <div>
